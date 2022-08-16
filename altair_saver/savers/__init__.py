@@ -3,6 +3,7 @@ from altair_saver.savers._basic import BasicSaver
 from altair_saver.savers._html import HTMLSaver
 from altair_saver.savers._node import NodeSaver
 from altair_saver.savers._selenium import SeleniumSaver, JavascriptError
+from altair_saver.savers._pyppeteer import PyppeteerSaver
 
 __all__ = [
     "Saver",
@@ -10,5 +11,6 @@ __all__ = [
     "HTMLSaver",
     "NodeSaver",
     "SeleniumSaver",
+    "PyppeteerSaver",
     "JavascriptError",
 ]

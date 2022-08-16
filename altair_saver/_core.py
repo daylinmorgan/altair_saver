@@ -10,6 +10,7 @@ from altair_saver.savers import (
     HTMLSaver,
     NodeSaver,
     SeleniumSaver,
+    PyppeteerSaver,
 )
 from altair_saver.types import JSONDict, Mimebundle
 from altair_saver._utils import extract_format, infer_mode_from_spec
@@ -18,6 +19,7 @@ _SAVER_METHODS: Dict[str, Type[Saver]] = OrderedDict(
     [
         ("basic", BasicSaver),
         ("html", HTMLSaver),
+        ("pyppeteer", PyppeteerSaver),
         ("selenium", SeleniumSaver),
         ("node", NodeSaver),
     ]
